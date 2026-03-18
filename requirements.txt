@@ -1,11 +1,10 @@
+streamlit==1.37.0
+altair<5
 numpy
 pandas
 scipy
 statsmodels
-matplotlib
-seaborn
-plotly
-streamlit
-scikit-learn
 pyyaml
-
+scikit-learn
+plotly
+matplotlib
