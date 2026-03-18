@@ -18,6 +18,40 @@ This project goes further and models a more realistic product experimentation wo
 - sequential testing
 - launch decisioning
 
+## Business Problem
+
+A product team wants to test a new homepage CTA designed to increase user conversion.
+
+However, increasing conversion should not harm overall user experience.
+
+The experiment evaluates whether the new CTA improves conversion while protecting key guardrail metrics.
+
+---
+
+## Experiment Design
+
+Unit of randomization: user_id
+
+Treatment:
+New homepage CTA
+
+Control:
+Existing CTA
+
+Primary metric:
+Conversion rate
+
+Guardrail metrics:
+Bounce rate
+Session length
+
+Target MDE:
++2% conversion lift
+
+Statistical settings:
+alpha = 0.05
+power = 0.8
+
 ## Features
 
 - **Synthetic experiment simulation**

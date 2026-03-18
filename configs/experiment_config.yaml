@@ -1,0 +1,20 @@
+experiment_name: homepage_cta_test
+primary_metric: conversion
+guardrail_metrics:
+  - bounced
+  - session_length
+unit_of_randomization: user_id
+
+alpha: 0.05
+power: 0.8
+mde: 0.02
+expected_baseline: 0.10
+daily_traffic: 2500
+
+allocation:
+  control: 0.5
+  treatment: 0.5
+
+test_type: sequential
+n_planned_looks: 5
+
